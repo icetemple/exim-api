@@ -6,7 +6,7 @@ __all__ = ('config',)
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
-    SERVER_NAME = os.getenv('SERVER_NAME', 'localhost')
+    SERVER_NAME = os.getenv('SERVER_NAME', 'localhost:4000')
     SERVER_HEADER = os.getenv('SERVER_HEADER', 'Exim API')
     PREFERRED_URL_SCHEME = os.getenv('PREFERRED_URL_SCHEME', 'https')
 

@@ -1,7 +1,7 @@
 import os
 
 
-bind = 'unix:gunicorn.sock'
+bind = 'localhost:4000'
 workers = os.getenv('GUNICORN_WORKERS', 1)
 errorlog = '-'
 reload = True
